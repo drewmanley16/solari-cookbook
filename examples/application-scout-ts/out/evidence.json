@@ -1,33 +1,99 @@
 [
   {
-    "url": "https://getsolari.com",
-    "title": "Solari",
-    "description": "Cloud browsers, sandboxes, and desktops behind one API.",
+    "url": "https://www.linkedin.com/posts/harry-chow1_were-hiring-a-swe-intern-for-pinetree-research-activity-7500203701882527746-mZal",
+    "title": "We're hiring a SWE intern for Pinetree Research, and the salary is $300K Before you ask: 300K annualized. And no, we don't want your resume, coverletter, or grades Here's how to apply: 1. Fork the… | Harry Chow | 63 comments",
+    "description": "We're hiring a SWE intern for Pinetree Research, and the salary is $300K\n\nBefore you ask: 300K annualized. And no, we don't want your resume, coverletter, or grades\n\nHere's how to apply:\n\n1. Fork the Solari repo: https://lnkd.in/gyn6QxSn\n2. Build a real use case with Solari (browsers, sandboxes, and/or desktops)\n3. Publish it on a public Github account\n4. Share it in a post on LinkedIn or X\n\nTag Harry Chow and Solari\n\nUse AI to build it. Seriously, we insist. We don’t care how you ship, we care that you can ship something great, and if you can ship if faster with AI, even better. (Chungin Lee)\n\nWhat happens next:\n- We review every build that tags us\n- If we like what you made, we schedule an interview\n- If you're the right fit, we'll hire you on the spot\n\nKnow someone who can take on the challenge? Tag them below\n\nFor questions about Solari or the role, comment below or DM 🚀\n\nMay the best dev win :) \n\nP.S. \n1. This is a remote hire - no relocation requirement \n2. A great use case is one that fits the needs/demands of the market -> get people to use your build \n3. Redeem STARTER1MO-MKY4BNDK for free credits through console.getsolari.com \n4. Documentation for Solari: docs.getsolari.com | 63 comments on LinkedIn",
     "headings": [
-      "Browsers for agents",
-      "Sandboxes for code",
-      "Desktops for computer use"
+      "Harry Chow’s Post",
+      "More from this author",
+      "Explore content categories",
+      "Sign in to view more content"
     ],
     "snippets": [
-      "Solari gives developers hosted browser sessions for scraping, testing, and agent workflows.",
-      "Sandboxes run untrusted code in isolated Linux VMs and can expose preview URLs.",
-      "Desktop sessions add a GUI surface for computer-use agents that need screenshots, clicks, and typing."
+      "By clicking Continue to join or sign in, you agree to LinkedIn’s User Agreement, Privacy Policy, and Cookie Policy.",
+      "We're hiring a SWE intern for Pinetree Research, and the salary is $300K Before you ask: 300K annualized. And no, we don't want your resume, coverletter, or grades Here's how to apply: 1. Fork the Solari repo: https://lnkd.in/gyn6QxSn 2. Build a real use case with Solari (browsers, sandboxes, and/or desktops) 3. Publish it on a public Github account 4. Share it in a post on LinkedIn or X Tag Harry Chow and Solari Use AI to build it. Seriously, we insist. We don’t care how you ship, we care that you can ship something great, and if you can ship if faster with AI, even better. (Chungin Lee) What happens next: - We review every build that tags us - If we like what you made, we schedule an interview - If you're the right fit, we'll hire you on the spot Know someone who can take on the challenge? Tag them below For questions about Solari or the role, comment below or DM 🚀 May the best dev win :) P.S. 1. This is a remote hire - no relocation requirement 2. A great use case is one that fits the needs/demands of the market -> get people to use your build 3. Redeem STARTER1MO-MKY4BNDK for free credits through console.getsolari.com 4. Documentation for Solari: docs.getsolari.com",
+      "This is awesome. Building something with parallel browser orchestration. Would love the credits!",
+      "Building on Solari this week. Would appreciate a credit code.",
+      "العربية (Arabic) বাংলা (Bangla) Čeština (Czech) Dansk (Danish) Deutsch (German) Ελληνικά (Greek) English (English) Español (Spanish) فارسی (Persian) Suomi (Finnish) Français (French) हिंदी (Hindi) Magyar (Hungarian) Bahasa Indonesia (Indonesian) Italiano (Italian) עברית (Hebrew) 日本語 (Japanese) 한국어 (Korean) मराठी (Marathi) Bahasa Malaysia (Malay) Nederlands (Dutch) Norsk (Norwegian) ਪੰਜਾਬੀ (Punjabi) Polski (Polish) Português (Portuguese) Română (Romanian) Русский (Russian) Svenska (Swedish) తెలుగు (Telugu) ภาษาไทย (Thai) Tagalog (Tagalog) Türkçe (Turkish) Українська (Ukrainian) Tiếng Việt (Vietnamese) 简体中文 (Chinese (Simplified)) 正體中文 (Chinese (Traditional)) Language",
+      "Create your free account or sign in to continue your search",
+      "By clicking Continue to join or sign in, you agree to LinkedIn’s User Agreement, Privacy Policy, and Cookie Policy."
     ]
   },
   {
     "url": "https://docs.getsolari.com",
     "title": "Solari Docs",
-    "description": "Developer documentation for the Solari API.",
+    "description": "Cloud infrastructure for AI agents: stealthy Chrome browsers, full Linux VMs, and fast code sandboxes on hardware-isolated microVMs, via the Solari SDKs and HTTP API.",
     "headings": [
-      "Quickstarts",
-      "Browser sessions",
-      "Sandbox commands",
-      "Desktop automation"
+      "Solari",
+      "Getting Started",
+      "Browsers",
+      "Desktops & Sandboxes",
+      "Platform",
+      "Next steps"
     ],
     "snippets": [
-      "The browser SDK is Playwright-compatible, so existing automation patterns transfer cleanly.",
-      "Sandbox commands use argv directly, which keeps execution predictable inside the VM.",
-      "A single API key works across browsers, sandboxes, and desktops."
+      "Cloud infrastructure for agents and automation: stealthy Chrome browsers, full Linux VMs, and fast code sandboxes. All of it runs on hardware-isolated microVMs, behind one API key.",
+      "Everything runs on one slr_live_[redacted] key. Pick the product you need, install its SDK, and go. Quickstart walks the first run end to end, and SDKs & Languages lists every binding.",
+      "A real Chrome in the cloud, ready in about a second. Drive it with Playwright or any CDP client. Solari handles the hard parts: staying undetected, routing through real-world IPs, solving captchas, remembering logins, and recording runs for replay.",
+      "Stay logged in across runs. Cookies and site data carry over.",
+      "Browse like a real person, so sites don't flag you as a bot.",
+      "Appear from real homes and networks in the country you pick.",
+      "Get past reCaptcha, hCaptcha, Turnstile, and more, automatically.",
+      "Watch a replay of everything that happened in a run.",
+      "Full Linux machines on Cloud Hypervisor microVMs. A VM is a real desktop you can watch and control over VNC; a Sandbox is the same engine headless, for running code. Both start from a memory snapshot, so they are live in milliseconds rather than booting.",
+      "A real Linux desktop you can see and control, over VNC.",
+      "Run commands, files, and code in an isolated machine.",
+      "The parts that apply to everything: where your work runs (Regions), who can reach it (Organizations), what it costs (Plans & Pricing), and what comes back when something goes wrong (Errors).",
+      "Quickstart: install and run your first browser, VM, or sandbox.",
+      "SDKs & Languages: TypeScript, Python, Go, Rust, and C++.",
+      "API reference: the raw HTTP API, with curl for every call."
+    ]
+  },
+  {
+    "url": "https://getsolari.com",
+    "title": "Solari",
+    "description": "The fastest infra for AI agents. Deploy browsers, sandboxes, and execution environments to automate at scale. ",
+    "headings": [
+      "The Fastest AgentInfrastructure",
+      "AI agents need secure environments that scaleAI agents need secure environments that scale",
+      "Designed for agents. Engineered for speedDesigned for agents. Engineered for speed",
+      "One platform. Everything AI agents need to execute",
+      "The fastest browser, by 4x",
+      "The fastest sandbox, end to end",
+      "Learn one client. You know all three",
+      "What teams run on Solari",
+      "Before you deploy. Everything you need to know.",
+      "The Fastest AgentInfrastructure"
+    ],
+    "snippets": [
+      "Browsers, sandboxes, and desktops. Solari provides the full infrastructure layer for AI agents, all from one API.",
+      "Every task needs an isolated place to browse the web, run code, or operate software. As demand grows, those environments must start fast, stay contained, and run in parallel.Every task needs an isolated place to browse the web, run code, or operate software. Asdemand grows, those environments must start fast, stay contained, and run in parallel.",
+      "Solari delivers the fastest secure, scalable environments for AI agents, from cloud browsers to sandboxes and desktops.Solari delivers the fastest secure, scalable environments forAI agents, from cloud browsers to sandboxes and desktops.",
+      "Give every agent the environment it needs without stitching together separate infrastructure.",
+      "For agents that need to browse, authenticate, scrape, and interact with the web.",
+      "For agents that need isolated compute to run code, execute tools, and process workloads.",
+      "For agents that need to control applications, navigate full operating systems, and complete complex computer workflows.",
+      "Against every other browser provider on Steel’s own open-source benchmark. Create, connect, navigate, and release, measured end to end.",
+      "On the open-source nibzard benchmark, same heavy workload on every provider: create the machine, run the code, tear it down. Solari finishes the round trip first.",
+      "One API gives your agents access to browsers, sandboxes, and desktops. Use the same authentication, session management, and infrastructure across every environment. Start with one primitive today and and another as your agents grow.",
+      "Pull pricing, listings, company data, and market signals from live websites without maintaining brittle scraping infrastructure.",
+      "Let agents navigate sites, fill forms, upload files, and complete multi-step browser workflows end to end.",
+      "Track prices, inventory, listings, and competitor changes continuously instead of checking marketplaces manually.",
+      "Keep sessions signed in so agents can return to authenticated portals and continue work without logging in every run.",
+      "Find companies, collect prospect data, and enrich records automatically before leads enter your sales workflow.",
+      "Test signup, login, checkout, and account flows in real browser sessions before broken journeys reach customers.",
+      "Monitor competitor pricing, products, and site changes automatically instead of repeatedly checking pages by hand.",
+      "Enter data, submit forms, and complete workflows inside portals that don't expose the APIs your agents need.",
+      "Run browser sessions in parallel so large automation workloads finish faster without manually managing each session.",
+      "Execute generated code and return files, charts, tables, or structured output without provisioning infrastructure for each task.",
+      "Give agents a clean workspace to edit code, install packages, run commands, test changes, and debug safely.",
+      "Run identical agent tasks in reproducible environments to compare models, prompts, and agent behavior reliably.",
+      "Launch, reset, and fork training environments in parallel to scale agent rollouts without manually managing compute.",
+      "Load datasets, run analysis, and generate charts or artifacts so agents can finish analytical workflows end to end.",
+      "Split large workloads across multiple environments so independent jobs execute simultaneously instead of sequentially.",
+      "Keep processes alive for tasks that take minutes or hours without forcing agents to restart their work.",
+      "Build projects and run integration tests in clean environments so generated code is validated before production.",
+      "Start agents with your packages, dependencies, tools, and system configuration already installed and ready."
     ]
   }
 ]

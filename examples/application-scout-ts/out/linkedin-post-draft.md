@@ -11,8 +11,8 @@ Artifacts included:
 - shareable HTML dashboard
 - reproducible TypeScript CLI
 
-Candidate lens: SWE intern who ships AI-native tooling
-Sources tested: getsolari.com, docs.getsolari.com
+Candidate lens: Pinetree SWE intern
+Sources tested: www.linkedin.com, docs.getsolari.com, getsolari.com
 
 Built with AI, because that was part of the assignment and because shipping speed matters.
 

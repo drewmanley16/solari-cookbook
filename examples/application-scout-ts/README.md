@@ -20,7 +20,7 @@ npm install
 export SOLARI_API_KEY=slr_live_...
 npm start -- \
   --candidate "AI automation intern" \
-  --targets https://www.ycombinator.com/companies/pinetree https://docs.getsolari.com
+  --targets https://www.linkedin.com/posts/harry-chow1_were-hiring-a-swe-intern-for-pinetree-research-activity-7500203701882527746-mZal https://docs.getsolari.com
 ```
 
 ## Try The Shape Locally

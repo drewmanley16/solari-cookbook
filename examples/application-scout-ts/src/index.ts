@@ -18,7 +18,7 @@ type CliOptions = {
 }
 
 const DEFAULT_TARGETS = [
-  "https://www.ycombinator.com/companies/pinetree",
+  "https://www.linkedin.com/posts/harry-chow1_were-hiring-a-swe-intern-for-pinetree-research-activity-7500203701882527746-mZal",
   "https://docs.getsolari.com",
   "https://getsolari.com",
 ]
@@ -124,18 +124,22 @@ async function collectEvidence(targets: string[]): Promise<Evidence[]> {
 
 async function extractEvidence(page: {
   title(): Promise<string>
-  evaluate<T>(fn: () => T): Promise<T>
+  evaluate<T>(fn: string): Promise<T>
 }, url: string): Promise<Evidence> {
   const title = await page.title()
-  const extracted = await page.evaluate(() => {
-    const textOf = (selector: string) =>
+  const extracted = await page.evaluate<{
+    description: string
+    headings: string[]
+    snippets: string[]
+  }>(`(() => {
+    const textOf = (selector) =>
       Array.from(document.querySelectorAll(selector))
-        .map((element) => (element.textContent ?? "").replace(/\s+/g, " ").trim())
+        .map((element) => (element.textContent ?? "").replace(/\\s+/g, " ").trim())
         .filter(Boolean)
 
     const description =
-      document.querySelector<HTMLMetaElement>('meta[name="description"]')?.content ??
-      document.querySelector<HTMLMetaElement>('meta[property="og:description"]')?.content ??
+      document.querySelector('meta[name="description"]')?.content ??
+      document.querySelector('meta[property="og:description"]')?.content ??
       ""
 
     const headings = textOf("h1, h2").slice(0, 16)
@@ -144,14 +148,14 @@ async function extractEvidence(page: {
       .slice(0, 28)
 
     return { description, headings, snippets: paragraphs }
-  })
+  })()`)
 
   return {
     url,
-    title,
-    description: extracted.description,
-    headings: extracted.headings,
-    snippets: extracted.snippets,
+    title: redactSecrets(title),
+    description: redactSecrets(extracted.description),
+    headings: extracted.headings.map(redactSecrets),
+    snippets: extracted.snippets.map(redactSecrets),
   }
 }
 
@@ -449,6 +453,10 @@ function escapeHtml(value: string): string {
     .replaceAll(">", "&gt;")
     .replaceAll('"', "&quot;")
     .replaceAll("'", "&#39;")
+}
+
+function redactSecrets(value: string): string {
+  return value.replace(/slr_live_[A-Za-z0-9_-]*/g, "slr_live_[redacted]")
 }
 
 function scoreText(text: string): number {
