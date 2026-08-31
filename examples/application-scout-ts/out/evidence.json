@@ -1,0 +1,33 @@
+[
+  {
+    "url": "https://getsolari.com",
+    "title": "Solari",
+    "description": "Cloud browsers, sandboxes, and desktops behind one API.",
+    "headings": [
+      "Browsers for agents",
+      "Sandboxes for code",
+      "Desktops for computer use"
+    ],
+    "snippets": [
+      "Solari gives developers hosted browser sessions for scraping, testing, and agent workflows.",
+      "Sandboxes run untrusted code in isolated Linux VMs and can expose preview URLs.",
+      "Desktop sessions add a GUI surface for computer-use agents that need screenshots, clicks, and typing."
+    ]
+  },
+  {
+    "url": "https://docs.getsolari.com",
+    "title": "Solari Docs",
+    "description": "Developer documentation for the Solari API.",
+    "headings": [
+      "Quickstarts",
+      "Browser sessions",
+      "Sandbox commands",
+      "Desktop automation"
+    ],
+    "snippets": [
+      "The browser SDK is Playwright-compatible, so existing automation patterns transfer cleanly.",
+      "Sandbox commands use argv directly, which keeps execution predictable inside the VM.",
+      "A single API key works across browsers, sandboxes, and desktops."
+    ]
+  }
+]
