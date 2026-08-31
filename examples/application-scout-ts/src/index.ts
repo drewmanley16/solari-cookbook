@@ -407,7 +407,6 @@ function renderSocialPost(candidate: string, evidence: Evidence[]): string {
   const hosts = evidence.map((item) => new URL(item.url).hostname).join(", ")
   const repoUrl = "https://github.com/drewmanley16/solari-cookbook"
   const exampleUrl = `${repoUrl}/tree/main/examples/application-scout-ts`
-  const demoUrl = "https://drewmanley16.github.io/solari-cookbook/application-scout/"
 
   return `I built Application Scout with Solari for the Pinetree Research SWE intern challenge.
 
@@ -415,7 +414,6 @@ It uses a Solari cloud browser to collect public evidence, then sends the bundle
 
 Repo: ${repoUrl}
 Example: ${exampleUrl}
-Demo: ${demoUrl}
 
 Artifacts included:
 - source evidence JSON

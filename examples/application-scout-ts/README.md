@@ -41,9 +41,10 @@ Generated files:
 - `out/application-scout-dashboard.html` — public-review friendly dashboard.
 - `out/social-post-draft.md` — X/LinkedIn draft with the required tags.
 
-Published demo for this fork:
+Optional GitHub Pages files are included under `/docs`. To publish the dashboard
+as a live page, enable GitHub Actions for the account and run the
+`Deploy Application Scout` workflow.
 
-- <https://drewmanley16.github.io/solari-cookbook/application-scout/>
 
 ## Why This Is Useful
 
