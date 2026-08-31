@@ -26,7 +26,8 @@ const DEFAULT_TARGETS = [
 const OUT_DIR = path.join(process.cwd(), "out")
 const REPORT_PATH = path.join(OUT_DIR, "application-scout-report.md")
 const DASHBOARD_PATH = path.join(OUT_DIR, "application-scout-dashboard.html")
-const SOCIAL_POST_PATH = path.join(OUT_DIR, "social-post-draft.md")
+const LINKEDIN_POST_PATH = path.join(OUT_DIR, "linkedin-post-draft.md")
+const X_POST_PATH = path.join(OUT_DIR, "x-post-draft.md")
 
 const options = parseArgs(process.argv.slice(2))
 
@@ -39,12 +40,14 @@ await mkdir(OUT_DIR, { recursive: true })
 await writeFile(REPORT_PATH, report, "utf8")
 await writeFile(path.join(OUT_DIR, "evidence.json"), JSON.stringify(evidence, null, 2), "utf8")
 await writeFile(DASHBOARD_PATH, renderDashboardHtml(evidence, report, options.candidate), "utf8")
-await writeFile(SOCIAL_POST_PATH, renderSocialPost(options.candidate, evidence), "utf8")
+await writeFile(LINKEDIN_POST_PATH, renderLinkedInPost(options.candidate, evidence), "utf8")
+await writeFile(X_POST_PATH, renderXPost(), "utf8")
 
 console.log(`sources: ${evidence.length}`)
 console.log(`report : ${REPORT_PATH}`)
 console.log(`dash   : ${DASHBOARD_PATH}`)
-console.log(`post   : ${SOCIAL_POST_PATH}`)
+console.log(`linkedin: ${LINKEDIN_POST_PATH}`)
+console.log(`x post : ${X_POST_PATH}`)
 
 function parseArgs(args: string[]): CliOptions {
   const targets: string[] = []
@@ -403,7 +406,7 @@ function renderDashboardHtml(evidence: Evidence[], report: string, candidate: st
 </html>`
 }
 
-function renderSocialPost(candidate: string, evidence: Evidence[]): string {
+function renderLinkedInPost(candidate: string, evidence: Evidence[]): string {
   const hosts = evidence.map((item) => new URL(item.url).hostname).join(", ")
   const repoUrl = "https://github.com/drewmanley16/solari-cookbook"
   const exampleUrl = `${repoUrl}/tree/main/examples/application-scout-ts`
@@ -425,6 +428,15 @@ Candidate lens: ${candidate}
 Sources tested: ${hosts}
 
 Built with AI, because that was part of the assignment and because shipping speed matters.
+
+@harrychow_ @getsolari
+`
+}
+
+function renderXPost(): string {
+  return `Built Application Scout for the Pinetree SWE intern challenge: a Solari browser collects public evidence, then a Solari sandbox scores it into a reviewable brief.
+
+https://github.com/drewmanley16/solari-cookbook/tree/main/examples/application-scout-ts
 
 @harrychow_ @getsolari
 `

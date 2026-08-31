@@ -39,7 +39,8 @@ Generated files:
 - `out/evidence.json` — normalized browser evidence.
 - `out/application-scout-report.md` — sandbox-generated fit brief.
 - `out/application-scout-dashboard.html` — public-review friendly dashboard.
-- `out/social-post-draft.md` — X/LinkedIn draft with the required tags.
+- `out/linkedin-post-draft.md` — longer LinkedIn draft with the required tags.
+- `out/x-post-draft.md` — short X draft with the required tags.
 
 Optional GitHub Pages files are included under `/docs`. To publish the dashboard
 as a live page, enable GitHub Actions for the account and run the
