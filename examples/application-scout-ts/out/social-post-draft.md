@@ -4,6 +4,7 @@ It uses a Solari cloud browser to collect public evidence, then sends the bundle
 
 Repo: https://github.com/drewmanley16/solari-cookbook
 Example: https://github.com/drewmanley16/solari-cookbook/tree/main/examples/application-scout-ts
+Demo: https://drewmanley16.github.io/solari-cookbook/application-scout/
 
 Artifacts included:
 - source evidence JSON

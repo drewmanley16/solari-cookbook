@@ -41,6 +41,10 @@ Generated files:
 - `out/application-scout-dashboard.html` — public-review friendly dashboard.
 - `out/social-post-draft.md` — X/LinkedIn draft with the required tags.
 
+Published demo for this fork:
+
+- <https://drewmanley16.github.io/solari-cookbook/application-scout/>
+
 ## Why This Is Useful
 
 For an internship application, this produces the kind of brief a builder would
