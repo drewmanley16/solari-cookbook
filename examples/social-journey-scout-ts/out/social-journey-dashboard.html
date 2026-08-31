@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Social Journey Scout</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #171412;
+      --muted: #665f58;
+      --line: #d6d1ca;
+      --paper: #f6f4ef;
+      --panel: #ffffff;
+      --accent: #006d77;
+      --accent-2: #b23a48;
+      --dark: #111a21;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font: 15px/1.5 ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--paper);
+      color: var(--ink);
+    }
+    header, main { width: min(1180px, calc(100% - 32px)); margin: 0 auto; }
+    header { padding: 42px 0 24px; }
+    h1 { margin: 0; font-size: clamp(2.4rem, 6vw, 5.8rem); line-height: 0.94; letter-spacing: 0; max-width: 900px; }
+    header p { max-width: 740px; color: var(--muted); font-size: 1.08rem; }
+    .meta { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 20px; }
+    .meta span { border: 1px solid var(--line); background: rgba(255,255,255,0.7); padding: 8px 10px; border-radius: 8px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; margin: 20px 0 30px; }
+    article { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 18px; min-height: 280px; }
+    article a { color: var(--accent); font-weight: 700; text-decoration: none; }
+    article h2 { font-size: 1.08rem; margin: 10px 0; }
+    article p, li { color: var(--muted); }
+    article ul { padding-left: 18px; }
+    .brief { background: var(--dark); color: #f7f5ef; border-radius: 8px; padding: 24px; margin-bottom: 40px; }
+    .brief h2 { margin-top: 0; }
+    .brief pre { white-space: pre-wrap; word-break: break-word; margin: 0; font: inherit; color: #e7e2d6; }
+    .rail { height: 6px; background: linear-gradient(90deg, var(--accent), var(--accent-2)); }
+  </style>
+</head>
+<body>
+  <div class="rail"></div>
+  <header>
+    <h1>Social Journey Scout</h1>
+    <p>Solari browses public proof, then a sandbox turns it into a content strategy brief for the next chapter of a builder's social media journey.</p>
+    <div class="meta">
+      <span>Subject: a builder turning public proof into a social media journey</span>
+      <span>Sources: 2</span>
+      <span>Artifacts: Brief, JSON, dashboard, post drafts</span>
+    </div>
+  </header>
+  <main>
+    <section class="grid" aria-label="Captured public sources"><article>
+        <a href="https://x.com/example-builder">x.com</a>
+        <h2>Example Builder on X</h2>
+        <p>Building in public with AI agents, browser automation, and shipping notes.</p>
+        <ul>
+          <li>Posts</li><li>Replies</li><li>Highlights</li><li>Built a tiny agent that watches product pages and turns changes into a customer-ready digest.</li><li>Lesson from shipping in public: proof beats promises, especially when the repo is open.</li>
+        </ul>
+      </article><article>
+        <a href="https://www.linkedin.com/in/example-builder">www.linkedin.com</a>
+        <h2>Example Builder | LinkedIn</h2>
+        <p>Student builder documenting AI-native software experiments.</p>
+        <ul>
+          <li>Experience</li><li>Projects</li><li>Activity</li><li>A good project post should show the before state, the thing you built, and the proof that it ran.</li><li>I am learning that distribution is a product skill, not a garnish after engineering.</li>
+        </ul>
+      </article></section>
+    <section class="brief">
+      <h2>Generated Journey Brief</h2>
+      <pre># Social Journey Scout Brief
+
+Subject lens: **a builder turning public proof into a social media journey**
+
+_Sample mode: generated from fixture evidence. Run without `--sample` to use Solari browser + sandbox._
+
+## Source Readout
+
+### 1. Example Builder on X
+
+- URL: https://x.com/example-builder
+- Journey score: 21
+- Public proof: I stopped polishing private demos and started shipping public experiments every week.
+- Public proof: The best feedback came after I showed the messy browser automation trace, not the final screenshot.
+- Public proof: This week I am turning my job search into a series of useful tools people can actually try.
+
+### 2. Example Builder | LinkedIn
+
+- URL: https://www.linkedin.com/in/example-builder
+- Journey score: 21
+- Public proof: I use public posts as a forcing function: every build needs a story, a user, and a next step.
+- Public proof: Recent work includes agent QA, social listening, and sandboxed code execution.
+- Public proof: My goal is to make each project useful enough that someone else asks to run it.
+
+## Content Moves To Make Next
+
+1. Show the build, not credentials.
+2. Explain what changed because Solari handled browsers and sandboxes.
+3. Invite people to try it on their own public journey.</pre>
+    </section>
+  </main>
+</body>
+</html>
