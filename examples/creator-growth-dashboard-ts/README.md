@@ -44,6 +44,8 @@ Generated files:
 - `out/partnership-outreach.md` — partnership radar, DM, and follow-up.
 - `out/linkedin-post-draft.md` — challenge post draft with the required tags.
 - `out/x-post-draft.md` — short X draft with the required tags.
+- `out/media/creator-growth-card.png` — 16:9 launch card for the X post.
+- `out/media/creator-growth-dashboard.png` — screenshot of the generated dashboard.
 
 ## Why This Can Win
 

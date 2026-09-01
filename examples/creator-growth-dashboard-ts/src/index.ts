@@ -31,12 +31,14 @@ const DEFAULT_TARGETS = [
 ]
 
 const OUT_DIR = path.join(process.cwd(), "out")
+const MEDIA_DIR = path.join(OUT_DIR, "media")
 const REPORT_PATH = path.join(OUT_DIR, "creator-growth-brief.md")
 const DASHBOARD_PATH = path.join(OUT_DIR, "creator-growth-dashboard.html")
 const EVIDENCE_PATH = path.join(OUT_DIR, "evidence.json")
 const CALENDAR_PATH = path.join(OUT_DIR, "content-calendar.md")
 const SCRIPTS_PATH = path.join(OUT_DIR, "script-studio.md")
 const OUTREACH_PATH = path.join(OUT_DIR, "partnership-outreach.md")
+const LAUNCH_CARD_PATH = path.join(MEDIA_DIR, "creator-growth-card.html")
 const LINKEDIN_POST_PATH = path.join(OUT_DIR, "linkedin-post-draft.md")
 const X_POST_PATH = path.join(OUT_DIR, "x-post-draft.md")
 
@@ -47,12 +49,14 @@ const report = options.sample
   : await analyzeInSandbox(evidence, options.subject)
 
 await mkdir(OUT_DIR, { recursive: true })
+await mkdir(MEDIA_DIR, { recursive: true })
 await writeFile(REPORT_PATH, report, "utf8")
 await writeFile(EVIDENCE_PATH, JSON.stringify(evidence, null, 2), "utf8")
 await writeFile(DASHBOARD_PATH, renderDashboardHtml(evidence, report, options.subject), "utf8")
 await writeFile(CALENDAR_PATH, renderContentCalendar(options.subject, evidence), "utf8")
 await writeFile(SCRIPTS_PATH, renderScriptStudio(options.subject, evidence), "utf8")
 await writeFile(OUTREACH_PATH, renderPartnershipOutreach(options.subject, evidence), "utf8")
+await writeFile(LAUNCH_CARD_PATH, renderLaunchCardHtml(evidence, options.subject), "utf8")
 await writeFile(LINKEDIN_POST_PATH, renderLinkedInPost(options.subject, evidence), "utf8")
 await writeFile(X_POST_PATH, renderXPost(), "utf8")
 
@@ -62,6 +66,7 @@ console.log(`dash    : ${DASHBOARD_PATH}`)
 console.log(`calendar: ${CALENDAR_PATH}`)
 console.log(`scripts : ${SCRIPTS_PATH}`)
 console.log(`outreach: ${OUTREACH_PATH}`)
+console.log(`card   : ${LAUNCH_CARD_PATH}`)
 console.log(`linkedin: ${LINKEDIN_POST_PATH}`)
 console.log(`x post  : ${X_POST_PATH}`)
 
@@ -537,6 +542,133 @@ I think it could be useful for your community because it starts from actual ship
 Quick follow-up: the useful part is that the same browser-collected evidence powers the content calendar, scripts, and outreach. Happy to run it on one public URL so you can judge the output directly.`
 }
 
+function renderLaunchCardHtml(evidence: Evidence[], subject: string): string {
+  const sourceCount = evidence.length
+  const proof = topProof(evidence)[0] ?? "Public proof becomes a repeatable growth engine."
+
+  return `<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Creator Growth Dashboard Launch Card</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      width: 1600px;
+      height: 900px;
+      overflow: hidden;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f6f4ef;
+      color: #161412;
+    }
+    .frame {
+      width: 100%;
+      height: 100%;
+      padding: 72px;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 56px;
+      border-top: 14px solid #006d77;
+      background:
+        linear-gradient(135deg, rgba(0,109,119,0.1), rgba(178,58,72,0.09) 45%, rgba(246,244,239,0) 70%),
+        #f6f4ef;
+    }
+    h1 {
+      margin: 0 0 28px;
+      font-size: 112px;
+      line-height: 0.9;
+      letter-spacing: 0;
+      max-width: 850px;
+    }
+    .dek {
+      color: #4d4741;
+      font-size: 31px;
+      line-height: 1.25;
+      max-width: 780px;
+      margin: 0 0 34px;
+    }
+    .chips {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+    .chip {
+      border: 2px solid #d6d1ca;
+      background: rgba(255,255,255,0.75);
+      border-radius: 8px;
+      padding: 14px 18px;
+      font-size: 22px;
+      font-weight: 700;
+    }
+    .panel {
+      align-self: stretch;
+      background: #111a21;
+      color: #f8f5ec;
+      border-radius: 8px;
+      padding: 42px;
+      display: grid;
+      align-content: center;
+      gap: 26px;
+      box-shadow: 0 24px 90px rgba(17, 26, 33, 0.18);
+    }
+    .panel h2 {
+      margin: 0;
+      font-size: 30px;
+      letter-spacing: 0;
+    }
+    .panel ul {
+      margin: 0;
+      padding-left: 28px;
+      font-size: 28px;
+      line-height: 1.38;
+    }
+    .proof {
+      border-left: 5px solid #b23a48;
+      padding-left: 20px;
+      color: #e8dfd0;
+      font-size: 24px;
+      line-height: 1.34;
+    }
+    .footer {
+      position: absolute;
+      left: 72px;
+      bottom: 48px;
+      color: #006d77;
+      font-size: 24px;
+      font-weight: 800;
+    }
+  </style>
+</head>
+<body>
+  <section class="frame">
+    <div>
+      <h1>Creator Growth Dashboard</h1>
+      <p class="dek">Solari browsers collect public creator proof. A Solari sandbox turns it into a calendar, scripts, and partnership outreach.</p>
+      <div class="chips">
+        <span class="chip">${sourceCount} sources</span>
+        <span class="chip">14-day calendar</span>
+        <span class="chip">Script studio</span>
+        <span class="chip">Outreach desk</span>
+      </div>
+    </div>
+    <aside class="panel">
+      <h2>Built for</h2>
+      <ul>
+        <li>builders shipping in public</li>
+        <li>founders turning proof into distribution</li>
+        <li>students applying with artifacts</li>
+      </ul>
+      <p class="proof">${escapeHtml(proof)}</p>
+    </aside>
+  </section>
+  <div class="footer">${escapeHtml(subject)}</div>
+</body>
+</html>`
+}
+
 function renderLinkedInPost(subject: string, evidence: Evidence[]): string {
   const hosts = evidence.map((item) => item.host).join(", ")
   const repoUrl = "https://github.com/drewmanley16/solari-cookbook"
@@ -562,7 +694,9 @@ Built with AI, because the assignment explicitly rewards shipping faster with AI
 }
 
 function renderXPost(): string {
-  return `Built Creator Growth Dashboard for the Pinetree SWE intern challenge: Solari browsers collect public social proof, then a sandbox turns it into a calendar, scripts, and outreach.
+  return `I built Creator Growth Dashboard for the Pinetree/Solari challenge.
+
+Solari browsers collect public creator proof. A Solari sandbox turns it into a 14-day calendar, scripts, and partnership outreach.
 
 https://github.com/drewmanley16/solari-cookbook/tree/main/examples/creator-growth-dashboard-ts
 
