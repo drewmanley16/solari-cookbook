@@ -1,4 +1,4 @@
-name: Deploy Social Journey Scout
+name: Deploy Creator Growth Dashboard
 
 on:
   push:

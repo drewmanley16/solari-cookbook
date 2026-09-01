@@ -26,7 +26,7 @@ past. Copy one into your project and change the parts you care about.
 | [sandbox-quickstart-ts](examples/sandbox-quickstart-ts) | TypeScript | Run a command, write and read files |
 | [sandbox-code-interpreter-py](examples/sandbox-code-interpreter-py) | Python | Stateful Python kernel for agent loops |
 | [sandbox-port-preview-ts](examples/sandbox-port-preview-ts) | TypeScript | Expose a server in the VM on a public URL |
-| [social-journey-scout-ts](examples/social-journey-scout-ts) | TypeScript | Browse public social proof, analyze it in a sandbox, and write a journey brief |
+| [creator-growth-dashboard-ts](examples/creator-growth-dashboard-ts) | TypeScript | Turn public social proof into a content calendar, scripts, and partnership outreach |
 
 ### Desktop
 

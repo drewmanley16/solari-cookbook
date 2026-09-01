@@ -1,0 +1,42 @@
+[
+  {
+    "url": "https://x.com/example-builder",
+    "host": "x.com",
+    "title": "Example Builder on X",
+    "description": "Building in public with AI agents, browser automation, and shipping notes.",
+    "headings": [
+      "Posts",
+      "Replies",
+      "Highlights"
+    ],
+    "snippets": [
+      "I stopped polishing private demos and started shipping public experiments every week.",
+      "The best feedback came after I showed the messy browser automation trace, not the final screenshot.",
+      "This week I am turning my job search into a series of useful tools people can actually try."
+    ],
+    "postLikeTexts": [
+      "Built a tiny agent that watches product pages and turns changes into a customer-ready digest.",
+      "Lesson from shipping in public: proof beats promises, especially when the repo is open."
+    ]
+  },
+  {
+    "url": "https://www.linkedin.com/in/example-builder",
+    "host": "www.linkedin.com",
+    "title": "Example Builder | LinkedIn",
+    "description": "Student builder documenting AI-native software experiments.",
+    "headings": [
+      "Experience",
+      "Projects",
+      "Activity"
+    ],
+    "snippets": [
+      "I use public posts as a forcing function: every build needs a story, a user, and a next step.",
+      "Recent work includes agent QA, social listening, and sandboxed code execution.",
+      "My goal is to make each project useful enough that someone else asks to run it."
+    ],
+    "postLikeTexts": [
+      "A good project post should show the before state, the thing you built, and the proof that it ran.",
+      "I am learning that distribution is a product skill, not a garnish after engineering."
+    ]
+  }
+]

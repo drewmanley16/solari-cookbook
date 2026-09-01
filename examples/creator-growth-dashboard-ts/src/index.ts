@@ -21,15 +21,18 @@ type CliOptions = {
 
 const DEFAULT_TARGETS = [
   "https://www.linkedin.com/posts/harry-chow1_were-hiring-a-swe-intern-for-pinetree-research-activity-7500203701882527746-mZal",
-  "https://github.com/drewmanley16/solari-cookbook/tree/main/examples/social-journey-scout-ts",
+  "https://github.com/drewmanley16/solari-cookbook/tree/main/examples/creator-growth-dashboard-ts",
   "https://docs.getsolari.com",
   "https://getsolari.com",
 ]
 
 const OUT_DIR = path.join(process.cwd(), "out")
-const REPORT_PATH = path.join(OUT_DIR, "social-journey-brief.md")
-const DASHBOARD_PATH = path.join(OUT_DIR, "social-journey-dashboard.html")
+const REPORT_PATH = path.join(OUT_DIR, "creator-growth-brief.md")
+const DASHBOARD_PATH = path.join(OUT_DIR, "creator-growth-dashboard.html")
 const EVIDENCE_PATH = path.join(OUT_DIR, "evidence.json")
+const CALENDAR_PATH = path.join(OUT_DIR, "content-calendar.md")
+const SCRIPTS_PATH = path.join(OUT_DIR, "script-studio.md")
+const OUTREACH_PATH = path.join(OUT_DIR, "partnership-outreach.md")
 const LINKEDIN_POST_PATH = path.join(OUT_DIR, "linkedin-post-draft.md")
 const X_POST_PATH = path.join(OUT_DIR, "x-post-draft.md")
 
@@ -43,12 +46,18 @@ await mkdir(OUT_DIR, { recursive: true })
 await writeFile(REPORT_PATH, report, "utf8")
 await writeFile(EVIDENCE_PATH, JSON.stringify(evidence, null, 2), "utf8")
 await writeFile(DASHBOARD_PATH, renderDashboardHtml(evidence, report, options.subject), "utf8")
+await writeFile(CALENDAR_PATH, renderContentCalendar(options.subject, evidence), "utf8")
+await writeFile(SCRIPTS_PATH, renderScriptStudio(options.subject, evidence), "utf8")
+await writeFile(OUTREACH_PATH, renderPartnershipOutreach(options.subject, evidence), "utf8")
 await writeFile(LINKEDIN_POST_PATH, renderLinkedInPost(options.subject, evidence), "utf8")
 await writeFile(X_POST_PATH, renderXPost(), "utf8")
 
 console.log(`sources : ${evidence.length}`)
 console.log(`brief   : ${REPORT_PATH}`)
 console.log(`dash    : ${DASHBOARD_PATH}`)
+console.log(`calendar: ${CALENDAR_PATH}`)
+console.log(`scripts : ${SCRIPTS_PATH}`)
+console.log(`outreach: ${OUTREACH_PATH}`)
 console.log(`linkedin: ${LINKEDIN_POST_PATH}`)
 console.log(`x post  : ${X_POST_PATH}`)
 
@@ -253,7 +262,7 @@ for _, pillar_scores, _ in source_rows:
     top_pillars.update(pillar_scores)
 
 lines = [
-    "# Social Journey Scout Brief",
+    "# Creator Growth Dashboard Brief",
     "",
     f"Subject lens: **{subject}**",
     "",
@@ -288,20 +297,20 @@ for idx, (score, pillar_scores, item) in enumerate(source_rows, 1):
 
 lines.extend([
     "",
-    "## Content Moves To Make Next",
+    "## Dashboard Outputs",
     "",
-    "1. Post the build as a before/after story: the problem, the Solari primitives used, and the generated artifact.",
-    "2. Show receipts: link the repo, include the live-run brief, and name the browser plus sandbox handoff.",
-    "3. Turn the build into a reusable workflow for creators, founders, and job seekers tracking their public proof.",
-    "4. Ask for usage, not validation: invite people to send two profile URLs and get a journey readout.",
+    "1. Content Calendar: turn the strongest proof into a 14-day publishing plan.",
+    "2. Script Studio: convert proof points into X threads, LinkedIn posts, and short-form video scripts.",
+    "3. Partnership Radar: identify collaborators, integration partners, and communities implied by the sources.",
+    "4. Outreach Desk: draft direct, specific messages that ask for collaboration instead of vague attention.",
     "",
     "## Suggested Positioning",
     "",
-    "This is not a resume replacement. It is a public-proof compiler: Solari browses the visible internet, a sandbox scores the narrative, and the output becomes a sharper next post.",
+    "This is a creator growth dashboard for builders: Solari browses public proof, a sandbox turns it into strategy, and the output becomes a calendar, scripts, and partnership outreach.",
     "",
     "## Next Product Step",
     "",
-    "Add scheduled reruns and diffing so a creator can watch their public story evolve week by week.",
+    "Add scheduled reruns and diffing so a creator can refresh the dashboard weekly and track which proof creates new partnership angles.",
     "",
 ])
 
@@ -318,7 +327,7 @@ function renderLocalReport(evidence: Evidence[], subject: string): string {
     .sort((a, b) => b.score - a.score)
 
   const lines = [
-    "# Social Journey Scout Brief",
+    "# Creator Growth Dashboard Brief",
     "",
     `Subject lens: **${subject}**`,
     "",
@@ -336,15 +345,18 @@ function renderLocalReport(evidence: Evidence[], subject: string): string {
     lines.push("")
   })
 
-  lines.push("## Content Moves To Make Next", "")
+  lines.push("## Dashboard Outputs", "")
   lines.push("1. Show the build, not credentials.")
-  lines.push("2. Explain what changed because Solari handled browsers and sandboxes.")
-  lines.push("3. Invite people to try it on their own public journey.")
+  lines.push("2. Convert proof into a two-week content calendar.")
+  lines.push("3. Generate scripts and partnership outreach from the same source evidence.")
 
   return lines.join("\n")
 }
 
 function renderDashboardHtml(evidence: Evidence[], report: string, subject: string): string {
+  const calendar = renderContentCalendar(subject, evidence)
+  const scripts = renderScriptStudio(subject, evidence)
+  const outreach = renderPartnershipOutreach(subject, evidence)
   const cards = evidence
     .map(
       (item) => `<article>
@@ -366,7 +378,7 @@ function renderDashboardHtml(evidence: Evidence[], report: string, subject: stri
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Social Journey Scout</title>
+  <title>Creator Growth Dashboard</title>
   <style>
     :root {
       color-scheme: light;
@@ -393,11 +405,15 @@ function renderDashboardHtml(evidence: Evidence[], report: string, subject: stri
     .meta { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 20px; }
     .meta span { border: 1px solid var(--line); background: rgba(255,255,255,0.7); padding: 8px 10px; border-radius: 8px; }
     .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; margin: 20px 0 30px; }
+    .outputs { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; margin-bottom: 30px; }
     article { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 18px; min-height: 280px; }
     article a { color: var(--accent); font-weight: 700; text-decoration: none; }
     article h2 { font-size: 1.08rem; margin: 10px 0; }
     article p, li { color: var(--muted); }
     article ul { padding-left: 18px; }
+    .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 18px; }
+    .panel h2 { margin-top: 0; font-size: 1.05rem; }
+    .panel pre { white-space: pre-wrap; word-break: break-word; margin: 0; color: var(--muted); font: inherit; }
     .brief { background: var(--dark); color: #f7f5ef; border-radius: 8px; padding: 24px; margin-bottom: 40px; }
     .brief h2 { margin-top: 0; }
     .brief pre { white-space: pre-wrap; word-break: break-word; margin: 0; font: inherit; color: #e7e2d6; }
@@ -407,16 +423,21 @@ function renderDashboardHtml(evidence: Evidence[], report: string, subject: stri
 <body>
   <div class="rail"></div>
   <header>
-    <h1>Social Journey Scout</h1>
-    <p>Solari browses public proof, then a sandbox turns it into a content strategy brief for the next chapter of a builder's social media journey.</p>
+    <h1>Creator Growth Dashboard</h1>
+    <p>Solari browses public proof, then a sandbox turns it into a content calendar, script studio, and partnership outreach desk for a builder's next chapter.</p>
     <div class="meta">
       <span>Subject: ${escapeHtml(subject)}</span>
       <span>Sources: ${evidence.length}</span>
-      <span>Artifacts: Brief, JSON, dashboard, post drafts</span>
+      <span>Artifacts: Brief, calendar, scripts, outreach, post drafts</span>
     </div>
   </header>
   <main>
     <section class="grid" aria-label="Captured public sources">${cards}</section>
+    <section class="outputs" aria-label="Generated creator outputs">
+      <div class="panel"><h2>Content Calendar</h2><pre>${escapeHtml(calendar)}</pre></div>
+      <div class="panel"><h2>Script Studio</h2><pre>${escapeHtml(scripts)}</pre></div>
+      <div class="panel"><h2>Partnership Outreach</h2><pre>${escapeHtml(outreach)}</pre></div>
+    </section>
     <section class="brief">
       <h2>Generated Journey Brief</h2>
       <pre>${escapeHtml(report)}</pre>
@@ -426,17 +447,103 @@ function renderDashboardHtml(evidence: Evidence[], report: string, subject: stri
 </html>`
 }
 
+function renderContentCalendar(subject: string, evidence: Evidence[]): string {
+  const proof = topProof(evidence)
+  const days = [
+    ["Build reveal", "Show the tool, the source links, and the generated dashboard."],
+    ["Problem post", "Explain why public proof is scattered across socials, repos, and docs."],
+    ["Behind the scenes", "Walk through Solari browser collection and sandbox analysis."],
+    ["Receipt thread", `Quote the strongest proof: ${proof[0] ?? "the public repo and live artifact."}`],
+    ["Market angle", "Position the dashboard for creators, founders, job seekers, and developer advocates."],
+    ["Mini tutorial", "Show how to pass X, LinkedIn, GitHub, and blog URLs as targets."],
+    ["Partnership ask", "Invite creators or communities to test the dashboard on their own journey."],
+    ["Failure lesson", "Share one bug from live verification and how it changed the product."],
+    ["Use case split", "Show separate outputs: calendar, scripts, outreach, proof library."],
+    ["Founder version", "Frame it as distribution infrastructure for technical founders."],
+    ["Student version", "Frame it as a public-proof alternative to resume-first applications."],
+    ["Devrel version", "Frame it as a content planning tool for product launches and docs."],
+    ["Open build ask", "Ask people what source they would add next: newsletter, YouTube, GitHub, or blog."],
+    ["Demo recap", "Summarize what shipped, what Solari handled, and what comes next."],
+  ]
+
+  return [
+    `# 14-Day Content Calendar`,
+    ``,
+    `Subject: ${subject}`,
+    ``,
+    ...days.map(([theme, action], index) => `Day ${index + 1}: ${theme}\n- ${action}`),
+  ].join("\n")
+}
+
+function renderScriptStudio(subject: string, evidence: Evidence[]): string {
+  const proof = topProof(evidence)
+  return `# Script Studio
+
+Subject: ${subject}
+
+## X Thread
+1. I built a creator dashboard that turns public proof into a content calendar and partnership outreach.
+2. The messy part is collecting the context: social posts, repos, docs, launch pages, and proof.
+3. Solari handles that with cloud browsers.
+4. Then a Solari sandbox scores the narrative and generates structured outputs.
+5. The output: brief, calendar, scripts, outreach, and share drafts.
+6. Strongest proof found: ${proof[0] ?? "the public build itself."}
+
+## LinkedIn Post
+I used Solari to build a Creator Growth Dashboard for builders who need distribution, not another blank content doc.
+
+It reads public proof with a cloud browser, analyzes it in a sandbox, then produces a content calendar, post scripts, partnership targets, and outreach drafts.
+
+The point: make your shipped work easier to explain, reuse, and turn into momentum.
+
+## Short-Form Video
+Hook: Your best content is probably already hiding in your public work.
+Scene 1: Show scattered sources: profile, repo, launch post, docs.
+Scene 2: Show Solari browsing those pages.
+Scene 3: Show the generated dashboard.
+Close: Public proof beats vague personal branding.`
+}
+
+function renderPartnershipOutreach(subject: string, evidence: Evidence[]): string {
+  const hosts = evidence.map((item) => item.host)
+  const partners = Array.from(
+    new Set([
+      "creator communities",
+      "developer tools teams",
+      "student founder groups",
+      "AI founder communities",
+      hosts.includes("getsolari.com") ? "Solari ecosystem builders" : "",
+      hosts.includes("github.com") ? "open-source maintainers" : "",
+    ].filter(Boolean)),
+  )
+
+  return `# Partnership Outreach
+
+Subject: ${subject}
+
+## Partnership Radar
+${partners.map((partner) => `- ${partner}: invite them to run the dashboard on a public launch or creator journey.`).join("\n")}
+
+## DM Draft
+Hey, I built a Solari-powered Creator Growth Dashboard that turns public proof into a content calendar, scripts, and partnership outreach.
+
+I think it could be useful for your community because it starts from actual shipped work, not generic content prompts. Want me to run it on a public launch/profile and send back the dashboard?
+
+## Follow-Up
+Quick follow-up: the useful part is that the same browser-collected evidence powers the content calendar, scripts, and outreach. Happy to run it on one public URL so you can judge the output directly.`
+}
+
 function renderLinkedInPost(subject: string, evidence: Evidence[]): string {
   const hosts = evidence.map((item) => item.host).join(", ")
   const repoUrl = "https://github.com/drewmanley16/solari-cookbook"
-  const exampleUrl = `${repoUrl}/tree/main/examples/social-journey-scout-ts`
+  const exampleUrl = `${repoUrl}/tree/main/examples/creator-growth-dashboard-ts`
 
-  return `I built Social Journey Scout with Solari for the Pinetree Research SWE intern challenge.
+  return `I built Creator Growth Dashboard with Solari for the Pinetree Research SWE intern challenge.
 
-It turns a public social media journey into a strategy brief:
+It turns a public social media journey into creator growth assets:
 - Solari browser collects public profile/post evidence
-- Solari sandbox scores the narrative arc and content pillars
-- the app outputs a brief, evidence JSON, dashboard, and post drafts
+- Solari sandbox scores the narrative arc, proof, and content pillars
+- the app outputs a content calendar, scripts, partnership outreach, evidence JSON, and a dashboard
 
 Repo: ${repoUrl}
 Example: ${exampleUrl}
@@ -451,12 +558,22 @@ Built with AI, because the assignment explicitly rewards shipping faster with AI
 }
 
 function renderXPost(): string {
-  return `Built Social Journey Scout for the Pinetree SWE intern challenge: Solari browsers collect public social proof, then a Solari sandbox turns it into a content strategy brief.
+  return `Built Creator Growth Dashboard for the Pinetree SWE intern challenge: Solari browsers collect public social proof, then a sandbox turns it into a calendar, scripts, and outreach.
 
-https://github.com/drewmanley16/solari-cookbook/tree/main/examples/social-journey-scout-ts
+https://github.com/drewmanley16/solari-cookbook/tree/main/examples/creator-growth-dashboard-ts
 
 @harrychow_ @getsolari
 `
+}
+
+function topProof(evidence: Evidence[]): string[] {
+  return evidence
+    .flatMap((item) => [...item.postLikeTexts, ...item.snippets])
+    .map((text) => text.replace(/\s+/g, " ").trim())
+    .filter((text) => text.length > 40)
+    .filter((text) => !/report this post|cookie policy|sign in to/i.test(text))
+    .map((text) => (text.length > 220 ? `${text.slice(0, 217)}...` : text))
+    .slice(0, 3)
 }
 
 function escapeHtml(value: string): string {
