@@ -1,12 +1,14 @@
 # Partnership Outreach
 
-Subject: a builder turning public proof into a social media journey
+Subject: Drew's creator journey toward shipping with Solari
 
 ## Partnership Radar
 - creator communities: invite them to run the dashboard on a public launch or creator journey.
 - developer tools teams: invite them to run the dashboard on a public launch or creator journey.
 - student founder groups: invite them to run the dashboard on a public launch or creator journey.
 - AI founder communities: invite them to run the dashboard on a public launch or creator journey.
+- Solari ecosystem builders: invite them to run the dashboard on a public launch or creator journey.
+- open-source maintainers: invite them to run the dashboard on a public launch or creator journey.
 
 ## DM Draft
 Hey, I built a Solari-powered Creator Growth Dashboard that turns public proof into a content calendar, scripts, and partnership outreach.

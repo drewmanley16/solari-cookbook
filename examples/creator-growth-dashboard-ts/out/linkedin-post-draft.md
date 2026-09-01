@@ -8,8 +8,8 @@ It turns a public social media journey into creator growth assets:
 Repo: https://github.com/drewmanley16/solari-cookbook
 Example: https://github.com/drewmanley16/solari-cookbook/tree/main/examples/creator-growth-dashboard-ts
 
-Subject lens: a builder turning public proof into a social media journey
-Sources tested: x.com, www.linkedin.com
+Subject lens: Drew's creator journey toward shipping with Solari
+Sources tested: www.linkedin.com, github.com, docs.getsolari.com, getsolari.com
 
 Built with AI, because the assignment explicitly rewards shipping faster with AI.
 

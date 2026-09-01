@@ -1,6 +1,6 @@
 # 14-Day Content Calendar
 
-Subject: a builder turning public proof into a social media journey
+Subject: Drew's creator journey toward shipping with Solari
 
 Day 1: Build reveal
 - Show the tool, the source links, and the generated dashboard.
@@ -9,7 +9,7 @@ Day 2: Problem post
 Day 3: Behind the scenes
 - Walk through Solari browser collection and sandbox analysis.
 Day 4: Receipt thread
-- Quote the strongest proof: Built a tiny agent that watches product pages and turns changes into a customer-ready digest.
+- Quote the strongest proof: We're hiring a SWE intern for Pinetree Research, and the salary is $300K Before you ask: 300K annualized. And no, we don't want your resume, coverletter, or grades Here's how to apply: 1. Fork the Solari repo: https:/...
 Day 5: Market angle
 - Position the dashboard for creators, founders, job seekers, and developer advocates.
 Day 6: Mini tutorial
