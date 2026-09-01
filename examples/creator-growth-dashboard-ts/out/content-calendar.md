@@ -9,7 +9,7 @@ Day 2: Problem post
 Day 3: Behind the scenes
 - Walk through Solari browser collection and sandbox analysis.
 Day 4: Receipt thread
-- Quote the strongest proof: We're hiring a SWE intern for Pinetree Research, and the salary is $300K Before you ask: 300K annualized. And no, we don't want your resume, coverletter, or grades Here's how to apply: 1. Fork the Solari repo: https:/...
+- Quote the strongest proof: Right now: interning at PayPal in Austin, studying CS at the University of Oregon.
 Day 5: Market angle
 - Position the dashboard for creators, founders, job seekers, and developer advocates.
 Day 6: Mini tutorial

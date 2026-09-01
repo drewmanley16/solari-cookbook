@@ -1,5 +1,112 @@
 [
   {
+    "url": "https://drewmanley.xyz",
+    "host": "drewmanley.xyz",
+    "title": "Drew Manley",
+    "description": "Drew Manley's personal site. CS student at the University of Oregon, currently interning at PayPal in San Jose. Backend and infrastructure work, side projects, and a map of everywhere I've been.",
+    "headings": [
+      "drew.manley",
+      "I write code.",
+      "Who I am",
+      "Say hi"
+    ],
+    "snippets": [
+      "Right now: interning at PayPal in Austin, studying CS at the University of Oregon.",
+      "I'm Drew. I study CS at the University of Oregon and spend most of my time either coding, traveling, or working out.",
+      "Lately that's meant a summer internship at PayPal in ATX, and before that Zendesk in Berlin, which is how I ended up spending a winter in Europe. I started the technical branch of The Oregon Blockchain Group, and I go to hackathons for fun sometimes.",
+      "Outside of that I travel whenever I can and post most of it on Instagram alongside offering fun tech advice/content.",
+      "The languages, frameworks, and tools I reach for when building backend services, infrastructure, and full stack products.",
+      "Always happy to talk, about backend systems, where to go next, or whatever you're building. My inbox is open, and I'm looking for full-time work starting in 2027."
+    ],
+    "postLikeTexts": []
+  },
+  {
+    "url": "https://github.com/drewmanley16",
+    "host": "github.com",
+    "title": "drewmanley16 (Drew Manley) · GitHub",
+    "description": "CS + MATH + ECON Student at the University of Oregon - drewmanley16",
+    "headings": [
+      "Navigation Menu",
+      "Drew Manley drewmanley16",
+      "Achievements",
+      "Block or report drewmanley16",
+      "🏦 what i'm up to",
+      "🛠️ stack",
+      "📊 the numbers",
+      "Pinned Loading",
+      "751 contributions in the last year",
+      "Contribution activity",
+      "Footer"
+    ],
+    "snippets": [
+      "PlatformAI CODE CREATIONGitHub CopilotWrite better code with AIGitHub Copilot appDirect agents from issue to mergeMCP RegistryIntegrate external toolsDEVELOPER WORKFLOWSActionsAutomate any workflowCodespacesInstant dev environmentsIssuesPlan and track workCode ReviewManage code changesCode QualityEnforce quality at mergeAPPLICATION SECURITYGitHub Advanced SecurityFind and fix vulnerabilitiesCode securitySecure your code as you buildSecret protectionStop leaks before they startEXPLOREWhy GitHubDocumentationBlogChangelogMarketplaceView all features",
+      "AI CODE CREATIONGitHub CopilotWrite better code with AIGitHub Copilot appDirect agents from issue to mergeMCP RegistryIntegrate external tools",
+      "GitHub Copilot appDirect agents from issue to merge",
+      "DEVELOPER WORKFLOWSActionsAutomate any workflowCodespacesInstant dev environmentsIssuesPlan and track workCode ReviewManage code changesCode QualityEnforce quality at merge",
+      "APPLICATION SECURITYGitHub Advanced SecurityFind and fix vulnerabilitiesCode securitySecure your code as you buildSecret protectionStop leaks before they start",
+      "GitHub Advanced SecurityFind and fix vulnerabilities",
+      "EXPLOREWhy GitHubDocumentationBlogChangelogMarketplace",
+      "SolutionsBY COMPANY SIZEEnterprisesSmall and medium teamsStartupsNonprofitsBY USE CASEApp ModernizationDevSecOpsDevOpsCI/CDView all use casesBY INDUSTRYHealthcareFinancial servicesManufacturingGovernmentView all industriesView all solutions",
+      "BY COMPANY SIZEEnterprisesSmall and medium teamsStartupsNonprofits",
+      "BY USE CASEApp ModernizationDevSecOpsDevOpsCI/CDView all use cases",
+      "BY INDUSTRYHealthcareFinancial servicesManufacturingGovernmentView all industries",
+      "ResourcesEXPLORE BY TOPICAISoftware DevelopmentDevOpsSecurityView all topicsEXPLORE BY TYPECustomer storiesEvents & webinarsEbooks & reportsBusiness insightsGitHub SkillsSUPPORT & SERVICESDocumentationCustomer supportCommunity forumTrust centerPartnersView all resources",
+      "EXPLORE BY TOPICAISoftware DevelopmentDevOpsSecurityView all topics",
+      "EXPLORE BY TYPECustomer storiesEvents & webinarsEbooks & reportsBusiness insightsGitHub Skills",
+      "SUPPORT & SERVICESDocumentationCustomer supportCommunity forumTrust centerPartners",
+      "Open SourceCOMMUNITYGitHub SponsorsFund open source developersPROGRAMSSecurity LabMaintainer CommunityGitHub StarsArchive ProgramREPOSITORIESTopicsTrendingCollections",
+      "COMMUNITYGitHub SponsorsFund open source developers",
+      "PROGRAMSSecurity LabMaintainer CommunityGitHub StarsArchive Program",
+      "EnterpriseENTERPRISE SOLUTIONSEnterprise platformAI-powered developer platformAVAILABLE ADD-ONSGitHub Advanced SecurityEnterprise-grade security featuresCopilot for BusinessEnterprise-grade AI featuresPremium SupportEnterprise-grade 24/7 support",
+      "ENTERPRISE SOLUTIONSEnterprise platformAI-powered developer platform",
+      "AVAILABLE ADD-ONSGitHub Advanced SecurityEnterprise-grade security featuresCopilot for BusinessEnterprise-grade AI featuresPremium SupportEnterprise-grade 24/7 support",
+      "GitHub Advanced SecurityEnterprise-grade security features",
+      "Prevent this user from interacting with your repositories and sending you notifications. Learn more about blocking users.",
+      "Contact GitHub support about this user’s behavior. Learn more about reporting abuse.",
+      "Payment Processing Intern @ PayPal — Summer 2026 (current) Working on settlement systems. Built a Claude-driven observability pipeline that auto-generates Terraform and GraphQL queries for Datadog dashboards.",
+      "Machine Learning Engineer @ Zendesk (previous) LLM evaluation and AI infra. Reworked the org's entire custom instructions evaluation methodology into a company-wide standard for agent workflow assessment.",
+      "Founder @ OBG Consulting, Oregon Blockchain Group Career Peer Educator @ Mohr Career Services, Lundquist College of Business",
+      "building at the intersection of AI and crypto, one hackathon at a time",
+      "val-levy/ZKHealth val-levy/ZKHealth Public Project for Consensus Blockchain Hackathon 2025 by Val Levy, Finley Fujimura, Drew Manley, and Armaan Hajar Python 1",
+      "Project for Consensus Blockchain Hackathon 2025 by Val Levy, Finley Fujimura, Drew Manley, and Armaan Hajar",
+      "jhatch3/Evergreen-Capital jhatch3/Evergreen-Capital Public decentralized, AI-governed prediction fund that autonomously trades on Polymarket using strategies generated by Google Gemini, powered by historical analytics stored in Snowflake, and enforced thro… TypeScript 2 2",
+      "decentralized, AI-governed prediction fund that autonomously trades on Polymarket using strategies generated by Google Gemini, powered by historical analytics stored in Snowflake, and enforced thro…"
+    ],
+    "postLikeTexts": [
+      "🏦 what i'm up to Payment Processing Intern @ PayPal — Summer 2026 (current) Working on settlement systems. Built a Claude-driven observability pipeline that auto-generates Terraform and GraphQL queries for Datadog dashboards. Machine Learning Engineer @ Zendesk (previous) LLM evaluation and AI infra. Reworked the org's entire custom instructions evaluation methodology into a company-wide standard for agent workflow assessment. Founder @ OBG Consulting, Oregon Blockchain Group Career Peer Educator @ Mohr Career Services, Lundquist College of Business class Drew: def __init__(self): self.school = \"University of Oregon\" self.role = [\"intern @ PayPal\", \"MLE @ Zendesk\"] self.focus = [\"AI agents\", \"Web3\", \"dev tooling\"] def ship(self): return \"hackathon #{n}\" 🛠️ stack 📊 the numbers 🌐 let's connect building at the intersection of AI and crypto, one hackathon at a time",
+      "Payment Processing Intern @ PayPal — Summer 2026 (current) Working on settlement systems. Built a Claude-driven observability pipeline that auto-generates Terraform and GraphQL queries for Datadog dashboards.",
+      "Machine Learning Engineer @ Zendesk (previous) LLM evaluation and AI infra. Reworked the org's entire custom instructions evaluation methodology into a company-wide standard for agent workflow assessment.",
+      "Founder @ OBG Consulting, Oregon Blockchain Group Career Peer Educator @ Mohr Career Services, Lundquist College of Business",
+      "🌐 let's connect building at the intersection of AI and crypto, one hackathon at a time"
+    ]
+  },
+  {
+    "url": "https://www.linkedin.com/in/drew-manley-89a455231",
+    "host": "www.linkedin.com",
+    "title": "Sign Up | LinkedIn",
+    "description": "750 million+ members | Manage your professional identity. Build and engage with your professional network. Access knowledge, insights and opportunities.",
+    "headings": [
+      "Join LinkedIn",
+      "Security verification",
+      "Sign in"
+    ],
+    "snippets": [
+      "By clicking Continue to join or sign in, you agree to LinkedIn’s User Agreement, Privacy Policy, and Cookie Policy.",
+      "By clicking Agree & Join, you agree to the LinkedIn User Agreement, Privacy Policy, and Cookie Policy.",
+      "العربية (Arabic) বাংলা (Bangla) Čeština (Czech) Dansk (Danish) Deutsch (German) Ελληνικά (Greek) English (English) Español (Spanish) فارسی (Persian) Suomi (Finnish) Français (French) हिंदी (Hindi) Magyar (Hungarian) Bahasa Indonesia (Indonesian) Italiano (Italian) עברית (Hebrew) 日本語 (Japanese) 한국어 (Korean) मराठी (Marathi) Bahasa Malaysia (Malay) Nederlands (Dutch) Norsk (Norwegian) ਪੰਜਾਬੀ (Punjabi) Polski (Polish) Português (Portuguese) Română (Romanian) Русский (Russian) Svenska (Swedish) తెలుగు (Telugu) ภาษาไทย (Thai) Tagalog (Tagalog) Türkçe (Turkish) Українська (Ukrainian) Tiếng Việt (Vietnamese) 简体中文 (Chinese (Simplified)) 正體中文 (Chinese (Traditional)) Language"
+    ],
+    "postLikeTexts": []
+  },
+  {
+    "url": "https://x.com/drewbydoo05",
+    "host": "x.com",
+    "title": "",
+    "description": "",
+    "headings": [],
+    "snippets": [],
+    "postLikeTexts": []
+  },
+  {
     "url": "https://www.linkedin.com/posts/harry-chow1_were-hiring-a-swe-intern-for-pinetree-research-activity-7500203701882527746-mZal",
     "host": "www.linkedin.com",
     "title": "We're hiring a SWE intern for Pinetree Research, and the salary is $300K Before you ask: 300K annualized. And no, we don't want your resume, coverletter, or grades Here's how to apply: 1. Fork the… | Harry Chow | 63 comments",
@@ -19,7 +126,7 @@
       "Create your free account or sign in to continue your search"
     ],
     "postLikeTexts": [
-      "Harry Chow 9h Edited Report this post We're hiring a SWE intern for Pinetree Research, and the salary is $300K Before you ask: 300K annualized. And no, we don't want your resume, coverletter, or grades Here's how to apply: 1. Fork the Solari repo: https://lnkd.in/gyn6QxSn 2. Build a real use case with Solari (browsers, sandboxes, and/or desktops) 3. Publish it on a public Github account 4. Share it in a post on LinkedIn or X Tag Harry Chow and Solari Use AI to build it. Seriously, we insist. We don’t care how you ship, we care that you can ship something great, and if you can ship if faster with AI, even better. (Chungin Lee) What happens next: - We review every build that tags us - If we like what you made, we schedule an interview - If you're the right fit, we'll hire you on the spot Know someone who can take on the challenge? Tag them below For questions about Solari or the role, comment below or DM 🚀 May the best dev win :) P.S. 1. This is a remote hire - no relocation requirement 2. A great use case is one that fits the needs/demands of the market -> get people to use your build 3. Redeem STARTER1MO-MKY4BNDK for free credits through console.getsolari.com 4. Documentation for Solari: docs.getsolari.com 187 63 Comments Like Comment Share Copy LinkedIn Facebook X Anjana Ramachandran 5h Report this comment This is awesome. Building something with parallel browser orchestration. Would love the credits! Like Reply 1 Reaction 2 Reactions John Ayodele 8h Report this comment Fawas Saka check this Like Reply 1 Reaction 2 Reactions John Ayodele 8h Report this comment Fawas Saka check this Like Reply 1 Reaction 2 Reactions Sunny Rodrigues 7h Report this comment Akshobhya Gupta, Vaidansh Kukreja, Aritra S. Like Reply 1 Reaction 2 Reactions Kamdi O. 8h Report this comment Commenting! 😊 Looks exciting Like Reply 1 Reaction 2 Reactions Anjali Singh 8h Report this comment Looks exciting Like Reply 1 Reaction 2 Reactions Christopher K. 5h Report this comment Is the role remote ? Like Reply 1 Reaction Yadneya Joshi 4h Report this comment Building on Solari this week. Would appreciate a credit code. Like Reply 1 Reaction Agam Saran 4h Report this comment Intrested Like Reply 1 Reaction Arjun D 6h Report this comment Interested Like Reply 1 Reaction See more comments To view or add a comment, sign in"
+      "Harry Chow 9h Edited Report this post We're hiring a SWE intern for Pinetree Research, and the salary is $300K Before you ask: 300K annualized. And no, we don't want your resume, coverletter, or grades Here's how to apply: 1. Fork the Solari repo: https://lnkd.in/gyn6QxSn 2. Build a real use case with Solari (browsers, sandboxes, and/or desktops) 3. Publish it on a public Github account 4. Share it in a post on LinkedIn or X Tag Harry Chow and Solari Use AI to build it. Seriously, we insist. We don’t care how you ship, we care that you can ship something great, and if you can ship if faster with AI, even better. (Chungin Lee) What happens next: - We review every build that tags us - If we like what you made, we schedule an interview - If you're the right fit, we'll hire you on the spot Know someone who can take on the challenge? Tag them below For questions about Solari or the role, comment below or DM 🚀 May the best dev win :) P.S. 1. This is a remote hire - no relocation requirement 2. A great use case is one that fits the needs/demands of the market -> get people to use your build 3. Redeem STARTER1MO-MKY4BNDK for free credits through console.getsolari.com 4. Documentation for Solari: docs.getsolari.com 188 63 Comments Like Comment Share Copy LinkedIn Facebook X Anjana Ramachandran 5h Report this comment This is awesome. Building something with parallel browser orchestration. Would love the credits! Like Reply 1 Reaction 2 Reactions John Ayodele 8h Report this comment Fawas Saka check this Like Reply 1 Reaction 2 Reactions John Ayodele 8h Report this comment Fawas Saka check this Like Reply 1 Reaction 2 Reactions Sunny Rodrigues 7h Report this comment Akshobhya Gupta, Vaidansh Kukreja, Aritra S. Like Reply 1 Reaction 2 Reactions Kamdi O. 8h Report this comment Commenting! 😊 Looks exciting Like Reply 1 Reaction 2 Reactions Anjali Singh 8h Report this comment Looks exciting Like Reply 1 Reaction 2 Reactions Christopher K. 5h Report this comment Is the role remote ? Like Reply 1 Reaction Yadneya Joshi 4h Report this comment Building on Solari this week. Would appreciate a credit code. Like Reply 1 Reaction Agam Saran 4h Report this comment Intrested Like Reply 1 Reaction Arjun D 6h Report this comment Interested Like Reply 1 Reaction See more comments To view or add a comment, sign in"
     ]
   },
   {

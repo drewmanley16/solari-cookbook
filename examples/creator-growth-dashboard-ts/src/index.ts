@@ -20,6 +20,10 @@ type CliOptions = {
 }
 
 const DEFAULT_TARGETS = [
+  "https://drewmanley.xyz",
+  "https://github.com/drewmanley16",
+  "https://www.linkedin.com/in/drew-manley-89a455231",
+  "https://x.com/drewbydoo05",
   "https://www.linkedin.com/posts/harry-chow1_were-hiring-a-swe-intern-for-pinetree-research-activity-7500203701882527746-mZal",
   "https://github.com/drewmanley16/solari-cookbook/tree/main/examples/creator-growth-dashboard-ts",
   "https://docs.getsolari.com",
@@ -63,7 +67,7 @@ console.log(`x post  : ${X_POST_PATH}`)
 
 function parseArgs(args: string[]): CliOptions {
   const targets: string[] = []
-  let subject = "a builder turning public proof into a social media journey"
+  let subject = "Drew's creator journey toward shipping with Solari"
   let sample = false
 
   for (let i = 0; i < args.length; i++) {

@@ -5,11 +5,11 @@ Subject lens: **Drew's creator journey toward shipping with Solari**
 ## What Story Is Already Visible
 
 - The strongest public signal is **solari-cookbook/examples/creator-growth-dashboard-ts at main · drewmanley16/solari-cookbook · GitHub**.
-- Ai-Native Workflow: 228 signals
-- Technical Depth: 103 signals
-- Builder Proof: 101 signals
-- Market Pull: 65 signals
-- Personal Narrative: 29 signals
+- Ai-Native Workflow: 276 signals
+- Builder Proof: 144 signals
+- Technical Depth: 129 signals
+- Market Pull: 77 signals
+- Personal Narrative: 42 signals
 
 ## Source Readout
 
@@ -33,7 +33,17 @@ Subject lens: **Drew's creator journey toward shipping with Solari**
 - Public proof: Give every agent the environment it needs without stitching together separate infrastructure.
 - Public proof: For agents that need isolated compute to run code, execute tools, and process workloads.
 
-### 3. Solari Docs
+### 3. drewmanley16 (Drew Manley) · GitHub
+
+- URL: https://github.com/drewmanley16
+- Journey score: 127
+- Pillars: builder proof x38, ai-native workflow x44, market pull x12, technical depth x23, personal narrative x10
+- Profile/meta: CS + MATH + ECON Student at the University of Oregon - drewmanley16
+- Public proof: 🏦 what i'm up to Payment Processing Intern @ PayPal — Summer 2026 (current) Working on settlement systems. Built a Claude-driven observability pipeline that auto-generates Terraform and GraphQL queries for Datadog dashboards. Machine Learning Engineer @ Zendes
+- Public proof: Payment Processing Intern @ PayPal — Summer 2026 (current) Working on settlement systems. Built a Claude-driven observability pipeline that auto-generates Terraform and GraphQL queries for Datadog dashboards.
+- Public proof: Machine Learning Engineer @ Zendesk (previous) LLM evaluation and AI infra. Reworked the org's entire custom instructions evaluation methodology into a company-wide standard for agent workflow assessment.
+
+### 4. Solari Docs
 
 - URL: https://docs.getsolari.com
 - Journey score: 92
@@ -41,13 +51,39 @@ Subject lens: **Drew's creator journey toward shipping with Solari**
 - Profile/meta: Cloud infrastructure for AI agents: stealthy Chrome browsers, full Linux VMs, and fast code sandboxes on hardware-isolated microVMs, via the Solari SDKs and HTTP API.
 - Public proof: SolariCloud infrastructure for agents and automation: stealthy Chrome browsers, full Linux VMs, and fast code sandboxes. All of it runs on hardware-isolated microVMs, behind one API key.Getting StartedEverything runs on one slr_live_[redacted] key. Pick the pr
 
-### 4. We're hiring a SWE intern for Pinetree Research, and the salary is $300K Before you ask: 300K annualized. And no, we don't want your resume, coverletter, or grades Here's how to apply: 1. Fork the… | Harry Chow | 63 comments
+### 5. We're hiring a SWE intern for Pinetree Research, and the salary is $300K Before you ask: 300K annualized. And no, we don't want your resume, coverletter, or grades Here's how to apply: 1. Fork the… | Harry Chow | 63 comments
 
 - URL: https://www.linkedin.com/posts/harry-chow1_were-hiring-a-swe-intern-for-pinetree-research-activity-7500203701882527746-mZal
 - Journey score: 88
 - Pillars: builder proof x42, ai-native workflow x21, market pull x12, technical depth x2, personal narrative x11
 - Profile/meta: We're hiring a SWE intern for Pinetree Research, and the salary is $300K Before you ask: 300K annualized. And no, we don't want your resume, coverletter, or grades Here's how to apply: 1. Fork the Solari repo: https://lnkd.in/gyn6QxSn 2. Build a real use case with Solari (browsers, sandboxes, and/or desktops) 3. Publish it on a public Github account 4. Share it in a post on LinkedIn or X Tag Harry Chow and Solari Use
 - Public proof: Harry Chow 9h Edited Report this post We're hiring a SWE intern for Pinetree Research, and the salary is $300K Before you ask: 300K annualized. And no, we don't want your resume, coverletter, or grades Here's how to apply: 1. Fork the Solari repo: https://lnkd
+
+### 6. Drew Manley
+
+- URL: https://drewmanley.xyz
+- Journey score: 11
+- Pillars: builder proof x4, ai-native workflow x1, technical depth x3, personal narrative x3
+- Profile/meta: Drew Manley's personal site. CS student at the University of Oregon, currently interning at PayPal in San Jose. Backend and infrastructure work, side projects, and a map of everywhere I've been.
+- Public proof: Right now: interning at PayPal in Austin, studying CS at the University of Oregon.
+- Public proof: I'm Drew. I study CS at the University of Oregon and spend most of my time either coding, traveling, or working out.
+- Public proof: Lately that's meant a summer internship at PayPal in ATX, and before that Zendesk in Berlin, which is how I ended up spending a winter in Europe. I started the technical branch of The Oregon Blockchain Group, and I go to hackathons for fun sometimes.
+
+### 7. Sign Up | LinkedIn
+
+- URL: https://www.linkedin.com/in/drew-manley-89a455231
+- Journey score: 4
+- Pillars: builder proof x1, ai-native workflow x3
+- Profile/meta: 750 million+ members | Manage your professional identity. Build and engage with your professional network. Access knowledge, insights and opportunities.
+- Public proof: By clicking Continue to join or sign in, you agree to LinkedIn’s User Agreement, Privacy Policy, and Cookie Policy.
+- Public proof: By clicking Agree & Join, you agree to the LinkedIn User Agreement, Privacy Policy, and Cookie Policy.
+- Public proof: العربية (Arabic) বাংলা (Bangla) Čeština (Czech) Dansk (Danish) Deutsch (German) Ελληνικά (Greek) English (English) Español (Spanish) فارسی (Persian) Suomi (Finnish) Français (French) हिंदी (Hindi) Magyar (Hungarian) Bahasa Indonesia (Indonesian) Italiano (Ital
+
+### 8. https://x.com/drewbydoo05
+
+- URL: https://x.com/drewbydoo05
+- Journey score: 0
+- Pillars: none
 
 ## Dashboard Outputs
 

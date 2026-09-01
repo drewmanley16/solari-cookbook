@@ -8,7 +8,7 @@ Subject: Drew's creator journey toward shipping with Solari
 3. Solari handles that with cloud browsers.
 4. Then a Solari sandbox scores the narrative and generates structured outputs.
 5. The output: brief, calendar, scripts, outreach, and share drafts.
-6. Strongest proof found: We're hiring a SWE intern for Pinetree Research, and the salary is $300K Before you ask: 300K annualized. And no, we don't want your resume, coverletter, or grades Here's how to apply: 1. Fork the Solari repo: https:/...
+6. Strongest proof found: Right now: interning at PayPal in Austin, studying CS at the University of Oregon.
 
 ## LinkedIn Post
 I used Solari to build a Creator Growth Dashboard for builders who need distribution, not another blank content doc.

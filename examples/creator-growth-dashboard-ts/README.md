@@ -17,13 +17,14 @@ approach for partnerships.
 cd examples/creator-growth-dashboard-ts
 npm install
 export SOLARI_API_KEY=slr_live_...
-npm start -- \
-  --subject "Drew's social media journey toward shipping with Solari" \
-  --targets https://www.linkedin.com/posts/harry-chow1_were-hiring-a-swe-intern-for-pinetree-research-activity-7500203701882527746-mZal https://github.com/drewmanley16/solari-cookbook/tree/main/examples/creator-growth-dashboard-ts https://docs.getsolari.com https://getsolari.com
+npm start
 ```
 
 Pass your own public X, LinkedIn, GitHub, blog, YouTube, newsletter, or project
 URLs in `--targets` to make the dashboard about your actual public footprint.
+
+The default run analyzes Drew's public creator footprint, the submitted GitHub
+build, the challenge post, and Solari's own docs/site.
 
 ## Try The Shape Locally
 
